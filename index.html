@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main class="centered-col">
+      <h1>Pattern Generation</h1>
+      <p>Uses Voronoi Diagrams for cell generation and Perlin Noise for colors.</p>
+    </main>
+    <script src="sketch.js"></script>
+    <div class="centered-col controls">
+      <div>
+        <label for="numPoints">Number of Points:</label>
+        <input type="range" id="numPoints" name="numPoints" min="25" max="250" value="250">
+        <span id="numPointsValue">250</span>
+      </div>
+      <div>
+        <label for="color1">Color 1:</label>
+        <input type="color" id="color1" name="color1" value="#2DC5F4">
+        <label for="color2">Color 2:</label>
+        <input type="color" id="color2" name="color2" value="#F063A4">
+      </div>
+    </div>
+  </body>
+</html>
